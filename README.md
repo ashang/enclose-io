@@ -9,10 +9,15 @@ http://enclose.io
 [![Test Coverage](https://codeclimate.com/github/pmq20/enclose-io/badges/coverage.svg)](https://codeclimate.com/github/pmq20/enclose-io/coverage)
 [![Issue Count](https://codeclimate.com/github/pmq20/enclose-io/badges/issue_count.svg)](https://codeclimate.com/github/pmq20/enclose-io)
 
-## Installation
+## Local Setup
 
 ### Windows
 
+    # Instal Windows 7
+    
+    # Install Microsoft Windows SDK for Windows 7 and .NET Framework 4
+    # -> https://www.microsoft.com/en-us/download/details.aspx?id=8279
+    
     # Install Ruby
     # -> http://rubyinstaller.org/
 
@@ -49,7 +54,7 @@ http://enclose.io
     set ENCLOSE_VCBUILD_ARGS=nosign
     bundle exec sidekiq --concurrency 1 --queue=win64
 
-### Mac OS X
+### macOS
 
     # Install Ruby
     # -> Follow the instructions of https://rvm.io/
