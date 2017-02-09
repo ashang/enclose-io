@@ -4,8 +4,7 @@
 # For full terms see the included LICENSE file
 
 class Project < ApplicationRecord
-  has_many :project_users, dependent: :destroy
-  has_many :users, through: :project_users
+  belongs_to :user
   has_many :executables, dependent: :destroy # FIXME might be slow due to AWS S3
   
   validates :name, presence: true, length: { maximum: 214 }

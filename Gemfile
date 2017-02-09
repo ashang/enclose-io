@@ -8,8 +8,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.0.1'
-gem 'node-compiler', '0.7.0'
-gem 'ruby-compiler', '0.1.0'
 gem 'pg', '~> 0.19.0'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -28,7 +26,7 @@ gem 'carrierwave-aws', '~> 1.0', '>= 1.0.2'
 gem 'sidekiq', '~> 4.2', '>= 4.2.3'
 gem 'rails_admin', '~> 1.0'
 gem 'rails-timeago', '~> 2.15'
-gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 group :development, :test do
   gem 'byebug', '>= 9.0.6', platform: :mri

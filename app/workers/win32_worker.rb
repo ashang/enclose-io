@@ -3,9 +3,9 @@
 # This file is part of Enclose.IO, distributed under the MIT License
 # For full terms see the included LICENSE file
 
-class Win64Worker
+class Win32Worker
   include Sidekiq::Worker
-  sidekiq_options queue: 'win64'
+  sidekiq_options queue: 'win32'
 
   def perform(id)
     Executable.find(id).compile!

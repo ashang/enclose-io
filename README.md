@@ -116,4 +116,4 @@ then we could execute commands similar to the following to get started.
     FOR /F "delims=" %i IN ('heroku config --shell') DO set %i
     FOR /F "delims==" %i IN ('heroku config --shell') DO call set %i=%%i:'=%
     set ENCLOSE_VCBUILD_ARGS=nosign
-    bundle exec sidekiq --concurrency 1 --queue=win64
+    bundle exec sidekiq --concurrency 1 --queue=win32

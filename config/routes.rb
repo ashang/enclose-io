@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :projects do
     resources :executables
   end
-  resources :helps
+  resources :workers
   authenticate :user, lambda { |u| u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
     mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

@@ -4,6 +4,6 @@
 # For full terms see the included LICENSE file
 
 class ApplicationMailer < ActionMailer::Base
-  default from: 'support@enclose.io'
+  default from: 'pmq2001@gmail.com'
   layout 'mailer'
 end
