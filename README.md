@@ -5,7 +5,7 @@ is a cloud-based service that creates a single executable out of your node.js ap
 for Windows, Linux and Mac OS X. It freezes your project code with the Node.js interpreter and all module dependencies,
 making your project ready to be used out-of-the-box.
 
-http://enclose.io/
+http://enclose.io
 
 [![Build Status](https://travis-ci.org/pmq20/enclose-io.svg?branch=master)](https://travis-ci.org/pmq20/enclose-io)
 [![Code Climate](https://codeclimate.com/github/pmq20/enclose-io/badges/gpa.svg)](https://codeclimate.com/github/pmq20/enclose-io)
