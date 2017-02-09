@@ -56,6 +56,8 @@ http://enclose.io
 
 ### macOS
 
+    # Install macOS 10.12 Sierra
+
     # Install Ruby
     # -> Follow the instructions of https://rvm.io/
 
