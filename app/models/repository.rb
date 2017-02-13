@@ -3,7 +3,7 @@
 # This file is part of Enclose.IO, distributed under the MIT License
 # For full terms see the included LICENSE file
 
-class Project < ApplicationRecord
+class Repository < ApplicationRecord
   belongs_to :user
   has_many :executables, dependent: :destroy # FIXME might be slow due to AWS S3
   

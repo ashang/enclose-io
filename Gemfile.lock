@@ -38,19 +38,16 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (5.7.0)
-      airbrake-ruby (~> 1.7)
-    airbrake-ruby (1.7.1)
     arel (7.1.4)
     autoprefixer-rails (6.7.2)
       execjs
-    aws-sdk (2.7.4)
-      aws-sdk-resources (= 2.7.4)
-    aws-sdk-core (2.7.4)
+    aws-sdk (2.7.7)
+      aws-sdk-resources (= 2.7.7)
+    aws-sdk-core (2.7.7)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.7.4)
-      aws-sdk-core (= 2.7.4)
+    aws-sdk-resources (2.7.7)
+      aws-sdk-core (= 2.7.7)
     aws-sigv4 (1.0.0)
     bcrypt (3.1.11)
     bootstrap (4.0.0.alpha6)
@@ -96,7 +93,7 @@ GEM
       activesupport (>= 4.1.0)
     haml (4.0.7)
       tilt
-    hashie (3.5.1)
+    hashie (3.5.3)
     i18n (0.8.0)
     jmespath (1.3.1)
     jquery-rails (4.2.2)
@@ -137,10 +134,10 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.4.1)
+    omniauth (1.4.2)
       hashie (>= 1.2, < 4)
       rack (>= 1.0, < 3)
-    omniauth-github (1.2.1)
+    omniauth-github (1.2.2)
       omniauth (~> 1.4.0)
       omniauth-oauth2 (>= 1.4.0, < 2.0)
     omniauth-oauth2 (1.4.0)
@@ -152,7 +149,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.7.0)
     rack (2.0.1)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -181,6 +177,9 @@ GEM
     rails-timeago (2.15.0)
       actionpack (>= 3.1)
       activesupport (>= 3.1)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_admin (1.1.1)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
@@ -194,6 +193,8 @@ GEM
       rails (>= 4.0, < 6)
       remotipart (~> 1.3)
       sass-rails (>= 4.0, < 6)
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -280,7 +281,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (~> 5.5)
   bootstrap (~> 4.0.0.alpha6)
   byebug (>= 9.0.6)
   carrierwave (~> 0.11.2)
@@ -294,9 +294,9 @@ DEPENDENCIES
   omniauth-github (~> 1.1, >= 1.1.2)
   pg (~> 0.19.0)
   pry (>= 0.10.4)
-  puma (~> 3.0)
   rails (~> 5.0.1)
   rails-timeago (~> 2.15)
+  rails_12factor (>= 0.0.3)
   rails_admin (~> 1.0)
   retina_tag (~> 1.4, >= 1.4.1)
   rspec-rails (~> 3.5, >= 3.5.2)
@@ -314,4 +314,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.13.7
+   1.14.3

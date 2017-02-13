@@ -1,9 +1,12 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  root 'projects#index'
-  devise_for :users, controllers: { omniauth_callbacks: 'omniauth' }
-  resources :projects do
+  root 'repositories#index'
+  devise_for :users, controllers: {
+    omniauth_callbacks: 'omniauth',
+    sessions: 'sessions',
+  }
+  resources :repositories do
     resources :executables
   end
   resources :workers

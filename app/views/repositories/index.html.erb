@@ -1,12 +1,11 @@
 <% if params[:mine] %>
-  <h4 class="pull-left">My Projects</h4>
-  <p class="pull-right"><a class="btn btn-secondary" href="<%= new_project_path %>" role="button">New Project</a></p>
+  <h4 class="pull-left">My Repositories</h4>
 <% end %>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Project Name</th>
+      <th>Name</th>
       <th>Latest Version</th>
       <% if params[:mine] %>
         <th>Operation</th>
@@ -16,13 +15,13 @@
     </tr>
   </thead>
   <tbody>
-    <% @projects.each do |x| %>
+    <% @repositories.each do |x| %>
     <tr>
-      <th scope="row"><a href="<%= project_path x %>"><%= x.name %></a></th>
+      <th scope="row"><a href="<%= repository_path x %>"><%= x.name %></a></th>
       <td><%= x.latest_version %></td>
       <td>
       <% if params[:mine] %>
-        <a href="<%= project_path(x) %>" data-method="delete"><button type="button" class="btn btn-danger btn-sm" data-confirm="Are you sure?">Delete</button></a>
+        <a href="<%= repository_path(x) %>" data-method="delete"><button type="button" class="btn btn-danger btn-sm" data-confirm="Are you sure?">Delete</button></a>
       <% else %>
         <%= x.executables.count(:id) %>
       <% end %>

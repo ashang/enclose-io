@@ -15,11 +15,18 @@ ActiveRecord::Schema.define(version: 20161024061121) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "projects", force: :cascade do |t|
+  create_table "executables", force: :cascade do |t|
+    t.integer  "repository_id"
+    t.string   "name",           null: false
+    t.string   "version",        null: false
+    t.integer  "kind",           null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "repositories", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name",           null: false
-    t.string   "latest_version", null: false
-    t.json     "npm_payload",    null: false
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

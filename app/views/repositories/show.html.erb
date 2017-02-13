@@ -1,11 +1,11 @@
 <div class="pull-left">
-  <h4><%= @project.name %></h4>
-  <p><a href="<%= @project.source_url %>"><%= @project.source_url %></a></p>
+  <h4><%= @repository.name %></h4>
+  <p><a href="<%= @repository.source_url %>"><%= @repository.source_url %></a></p>
 </div>
 
 <p class="pull-right">
-  <a class="btn btn-secondary" href="<%= project_executables_path(@project) %>" data-method="post" role="button"><i class="fa fa-refresh" aria-hidden="true"></i> Check Releases</a>
-  <a class="btn btn-danger" href="<%= project_path @project %>" data-method="delete" data-confirm="Are you sure?" role="button">Delete</a>
+  <a class="btn btn-secondary" href="<%= repository_executables_path(@repository) %>" data-method="post" role="button"><i class="fa fa-refresh" aria-hidden="true"></i> Check Releases</a>
+  <a class="btn btn-danger" href="<%= repository_path @repository %>" data-method="delete" data-confirm="Are you sure?" role="button">Delete</a>
 </p>
 
 <table class="table">
@@ -16,7 +16,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @project.executables.order('version DESC, name ASC, kind ASC').each do |x| %>
+    <% @repository.executables.order('version DESC, name ASC, kind ASC').each do |x| %>
       <% if x.done? %>
         <tr class="done">
           <th scope="row"><a href="<%= x.file.url %>"><%= file_item x %></a></th>
