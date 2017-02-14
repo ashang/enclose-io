@@ -6,8 +6,7 @@
 class User < ApplicationRecord
   ADMINISTRATORS = [ 'pmq20', 'shaoshuai0102' ]
 
-  has_many :project_users
-  has_many :projects, through: :project_users
+  has_many :repositories
 
   devise :database_authenticatable, :omniauthable, :trackable
 

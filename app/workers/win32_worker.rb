@@ -3,8 +3,11 @@
 # This file is part of Enclose.IO, distributed under the MIT License
 # For full terms see the included LICENSE file
 
-class HelpsController < ApplicationController
-  def index
-    
+class Win32Worker
+  include Sidekiq::Worker
+  sidekiq_options queue: 'win32'
+
+  def perform(id)
+    Executable.find(id).compile!
   end
 end
