@@ -117,7 +117,7 @@ http://enclose.io
     export ENCLOSE_IO_MAKE_ARGS=-j4
     eval $(heroku config --shell) nohup bundle exec sidekiq --concurrency 1 --queue=linux64 2>&1 &
 
-## See Also
+## Compilers
 
 Compilers used by Enclose.IO are,
 
