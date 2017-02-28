@@ -1,17 +1,3 @@
-require 'sidekiq/web'
-
 Rails.application.routes.draw do
-  root 'welcome#index'
-  devise_for :users, controllers: {
-    omniauth_callbacks: 'omniauth',
-    sessions: 'sessions',
-  }
-  resources :repositories do
-    resources :executables
-  end
-  resources :workers
-  authenticate :user, lambda { |u| u.admin? } do
-    mount Sidekiq::Web => '/sidekiq'
-    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  end
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

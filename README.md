@@ -1,17 +1,24 @@
-# Enclose.IO
+# README
 
-Cloud-based service that compiles your application into a single executable.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-http://enclose.io
+Things you may want to cover:
 
-[![Build Status](https://travis-ci.org/pmq20/enclose-io.svg?branch=master)](https://travis-ci.org/pmq20/enclose-io)
-[![Code Climate](https://codeclimate.com/github/pmq20/enclose-io/badges/gpa.svg)](https://codeclimate.com/github/pmq20/enclose-io)
-[![Test Coverage](https://codeclimate.com/github/pmq20/enclose-io/badges/coverage.svg)](https://codeclimate.com/github/pmq20/enclose-io/coverage)
-[![Issue Count](https://codeclimate.com/github/pmq20/enclose-io/badges/issue_count.svg)](https://codeclimate.com/github/pmq20/enclose-io)
+* Ruby version
 
-## Compilers
+* System dependencies
 
-Compilers used by Enclose.IO are,
+* Configuration
 
-- [Node.js Compiler](https://github.com/pmq20/node-compiler): Compiling your Node.js application into a single executable.
-- [Ruby Compiler](https://github.com/pmq20/ruby-compiler): Compiling your Ruby application into a single executable.
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
