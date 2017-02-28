@@ -48,4 +48,11 @@ ActiveRecord::Schema.define(version: 20161024061121) do
     t.index ["github_uid"], name: "index_users_on_github_uid", unique: true, using: :btree
   end
 
+  create_table "workers", force: :cascade do |t|
+    t.string   "name",           null: false
+    t.integer  "kind",           null: false
+    t.text     "desc"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 end

@@ -4,7 +4,7 @@
 # For full terms see the included LICENSE file
 
 class RepositoriesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :destroy]
+  before_action :authenticate_user!, except: [ :show ]
   
   def index
     if params[:mine]

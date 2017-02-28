@@ -41,9 +41,6 @@ http://enclose.io
     # Install Perl
     # -> http://www.activestate.com/ActivePerl
 
-    # Install bison, sed from GnuWin32
-    # -> http://gnuwin32.sourceforge.net/
-
     # Run the worker
     git clone https://github.com/pmq20/enclose-io.git
     cd enclose-io
@@ -52,7 +49,7 @@ http://enclose.io
     FOR /F "delims=" %i IN ('heroku config --shell') DO set %i
     FOR /F "delims==" %i IN ('heroku config --shell') DO call set %i=%%i:'=%
     set ENCLOSE_VCBUILD_ARGS=nosign
-    bundle exec sidekiq --concurrency 1 --queue=win64
+    bundle exec sidekiq --concurrency 1 --queue=win32
 
 ### macOS
 
